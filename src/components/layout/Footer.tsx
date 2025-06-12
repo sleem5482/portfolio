@@ -7,12 +7,12 @@ const Footer = () => {
       <div className="sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center space-y-1.5">
           <div className='grid grid-cols-2 gap-20'>
-          <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
             Sleem Hashem
           </h2>
           <div className="flex space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/sleem5482"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-500 transition-colors"
@@ -20,7 +20,7 @@ const Footer = () => {
               <GitHub />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sleem-hashem-420235296"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-500 transition-colors"
@@ -28,7 +28,7 @@ const Footer = () => {
               <LinkedIn />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/hashem_sle82966?t=eaLCKSTR7F-5uQfqhPIBuQ&s=09"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-500 transition-colors"
