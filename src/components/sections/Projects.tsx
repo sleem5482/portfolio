@@ -7,12 +7,13 @@ import Image from 'next/image';
 const Projects = () => {
 
 
-  const sectionRef = useRef(null);
+  const sectionRef =  useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     const section = sectionRef.current;
+     if (!section) return;
     const cards = section.querySelectorAll('.project-card');
 
     gsap.from(section.querySelector('.projects-title'), {

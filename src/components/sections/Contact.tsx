@@ -7,13 +7,13 @@ import SendIcon from '@mui/icons-material/Send';
 
 
 const Contact = () => {
-    const sectionRef = useRef(null);
+    const sectionRef =useRef<HTMLElement | null>(null);;
      const [result, setResult] =useState("");
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending....");
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.target as HTMLFormElement);
 
     formData.append("access_key", `${process.env.NEXT_PUBLIC_WEB3FORMS_API_KEY}`);
 
@@ -26,7 +26,7 @@ const Contact = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
-      event.target.reset();
+      (event.target as HTMLFormElement).reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -38,6 +38,7 @@ const Contact = () => {
         gsap.registerPlugin(ScrollTrigger);
 
         const section = sectionRef.current;
+        if (!section) return; 
         const elements = section.querySelectorAll(".animate-on-scroll");
 
         elements.forEach((el, index) => {

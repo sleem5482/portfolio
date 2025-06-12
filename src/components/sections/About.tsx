@@ -4,12 +4,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Code, Brush, Speed, DevicesRounded } from '@mui/icons-material';
 
 const About = () => {
-  const sectionRef = useRef(null);
+  const sectionRef =  useRef<HTMLElement | null>(null);;
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     const section = sectionRef.current;
+      if (!section) return; // Ensure section is defined
     const cards = section.querySelectorAll('.skill-card');
 
     gsap.from(section.querySelector('.about-title'), {
