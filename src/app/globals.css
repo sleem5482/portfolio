@@ -1,26 +1,143 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  font-family: sans-serif;
+
+}
+.header{
+    background-color: rgb(220, 163, 210);
+    position: sticky;
+top: 0px;
+
+   z-index: 10000;
+   background: linear-gradient(25deg ,#a9a7ca,#9690bf ,#c1d8fa,#a69bfc,#ddb1c6, #a9a7ca);
+   background-size: 300% 300%;
+   animation: color 20s ease-in-out infinite;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+   
+    color: rgb(114, 139, 144);
+}
+.main-img{
+    animation: drop 4s linear infinite;
+
+}
+@keyframes drop{
+    0%{
+        transform:translateY(20px);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+#home{
+    color: rgb(212, 16, 127);
+    width: 100%;
+    background: linear-gradient(25deg ,#f83f54,#9690bf ,#c1d8fa,#a69bfc,#de0f6c, #f83f54);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    /* animation-play-state: running; */
+    /* animation: name duration timing-function delay iteration-
+ count direction fill-mode play-state; */
+
+}
+@keyframes color{
+    0% {
+ background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+ img{
+    border-radius: 10%;
+}
+#about_me img:hover , #projects .example:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    transition-duration: 1s;
+}
+#projects .example:hover{
+    box-shadow: 0px 0px 10px 5px lightgray;
+}
+#about_me h1::before  {
+    content: "";
+    width: 80px ;
+height: 2px;
+background-color: #c1d8fa;
+position: absolute;
+left: -100px;
+top: 60%;
+}
+#about_me h1::after {
+    content: "";
+    width: 80px ;
+height: 2px;
+background-color: #c1d8fa;
+position: absolute;
+right: -100px;
+top: 60%;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+#about_me span::before {
+    content: "";
+    width: 50px ;
+height: 2px;
+background-color: #3f88f6;
+position: absolute;
+left: -70px;
+top: 40%;
+}
+#about_me span::after{
+    content: "";
+    width: 50px ;
+height: 2px;
+background-color: #3f88f6;
+position: absolute;
+right: -70px;
+top: 40%;
+}
+#about_me{
+color: rgb(212, 16, 127);
+    width: 100%;
+    background:linear-gradient(25deg ,#000000, #79040f,#1e1969 ,#000000);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+#projects img{
+    background-size: 100% 100%;
+    border-radius: 0;
+
+}
+#projects button{
+    margin-left: 35%;
+}
+#projects{
+    color: rgb(212, 16, 127);
+    width: 100%;
+    background: linear-gradient(25deg ,#f3f5e5 ,rgb(255, 255, 255),#ffbaf9,#d4d4d4,#ddded6);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+.copyr{
+    font-size: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+::selection{
+    background-color: darkslategrey;
+    color: white;
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.container{
+  padding: 0 8%;
+  
 }
