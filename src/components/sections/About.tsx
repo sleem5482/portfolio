@@ -84,7 +84,7 @@ const About = () => {
           About <span className="text-blue-500">Me</span>
         </h2>
         <p className="about-text text-xl text-gray-600 text-center max-w-3xl mx-auto mb-16">
-          I'm a passionate web developer with a keen eye for design and a commitment to creating
+          I&apos;m a passionate web developer with a keen eye for design and a commitment to creating
           seamless user experiences. My journey in web development has equipped me with a
           diverse skill set and a problem-solving mindset.
         </p>

@@ -92,10 +92,10 @@ const Contact = () => {
                     <div className="space-y-8">
                         <div className="animate-on-scroll">
                             <h3 className="text-2xl font-semibold mb-6">
-                                Let's Connect
+                                Let&apos;s Connect
                             </h3>
                             <p className="text-gray-600 mb-8">
-                                I'm always open to discussing new projects,
+                                I&apos;m always open to discussing new projects,
                                 creative ideas, or opportunities to be part of
                                 your visions.
                             </p>

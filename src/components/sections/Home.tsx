@@ -52,7 +52,7 @@ const Home = () => {
               ref={headingRef}
               className="text-5xl md:text-7xl font-bold text-gray-900 mb-6"
             >
-              <span className="block text-4xl md:text-5xl mb-2">Hi, I'm</span>
+              <span className="block text-4xl md:text-5xl mb-2">Hi, I&apos;m</span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                 Sleem Hashem
               </span>
@@ -62,7 +62,7 @@ const Home = () => {
               className="text-xl md:text-2xl text-gray-600 max-w-3xl mb-12"
             >
               A passionate web developer creating beautiful and functional digital experiences.
-              Let's build something amazing together.
+              Let&apos;s build something amazing together.
             </p>
             <div
               ref={socialsRef}
