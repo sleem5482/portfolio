@@ -11,6 +11,13 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      // Next.js includes react/no-unescaped-entities which flags common apostrophes in JSX.
+      // It's often easier to either escape or just turn it off globally if it becomes noisy.
+      'react/no-unescaped-entities': 'off',
+    },
+  },
 ];
 
 export default eslintConfig;

@@ -90,7 +90,7 @@ const skills = [
           About <span className="text-blue-500">Me</span>
         </h2>
         <p className="about-text text-xl text-gray-600 text-center max-w-3xl mx-auto mb-16">
-   I'm a passionate Web Developer and Machine Learning Engineer who combines creative design with data-driven intelligence. With a strong foundation in front-end development and a deep interest in AI, I build seamless user experiences powered by smart,
+   I&apos;m a passionate Web Developer and Machine Learning Engineer who combines creative design with data-driven intelligence. With a strong foundation in front-end development and a deep interest in AI, I build seamless user experiences powered by smart,
     scalable solutions. My journey has shaped me into a problem solver who thrives at the intersection of design, development, and machine learning.
         </p>
 
