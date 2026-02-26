@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -15,12 +16,21 @@ interface Skill {
 const skills: Skill[] = [
   { name: 'HTML5', level: 90, image: '/img/html.jpg', color: '#E34F26' },
   { name: 'CSS3', level: 90, image: '/img/css.webp', color: '#1572B6' },
-  { name: 'Java Script', level: 80, image: '/img/js.jpg', color: '#F7DF1E' },
-  { name: 'Type Script', level: 70, image: '/img/ts.jpg', color: '#3178C6' },
-  { name: 'React js', level: 70, image: '/img/logo192.png', color: '#38B2AC' },
-  { name: 'Next js', level: 60, image: '/img/next.svg', color: '#38B2AC' },
-];
+  { name: 'JavaScript', level: 80, image: '/img/js.jpg', color: '#F7DF1E' },
+  { name: 'TypeScript', level: 70, image: '/img/ts.jpg', color: '#3178C6' },
+  { name: 'React.js', level: 70, image: '/img/logo192.png', color: '#38B2AC' },
+  { name: 'Next.js', level: 60, image: '/img/next.svg', color: '#000000' },
 
+  // Machine Learning & Data Science
+  { name: 'Python', level: 85, image: '/img/python-svgrepo-com.svg', color: '#3776AB' },
+  { name: 'NumPy', level: 80, image: '/img/numpy.png', color: '#013243' },
+  { name: 'Pandas', level: 80, image: '/img/pandas.png', color: '#150458' },
+  { name: 'Matplotlib', level: 75, image: '/img/matplotlib.png', color: '#11557C' },
+
+  { name: 'Scikit-learn', level: 70, image: '/img/scikit.png', color: '#F7931E' },
+  { name: 'TensorFlow', level: 65, image: '/img/tensorflow.png', color: '#FF6F00' },
+  { name: 'Keras', level: 65, image: '/img/keras.png', color: '#D00000' },
+];
 export default function Skills() {
   const skillsRef = useRef(null);
 

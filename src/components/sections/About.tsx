@@ -1,7 +1,8 @@
+"use client"
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Code, Brush, Speed, DevicesRounded } from '@mui/icons-material';
+import { Code, Speed, DevicesRounded,Memory  } from '@mui/icons-material';
 
 const About = () => {
   const sectionRef =  useRef<HTMLElement | null>(null);;
@@ -51,28 +52,32 @@ const About = () => {
     });
   }, []);
 
-  const skills = [
-    {
-      icon: <Code className="text-4xl text-blue-500" />,
-      title: 'Web Development',
-      description: 'Building responsive and dynamic web applications using modern technologies.',
-    },
-    {
-      icon: <Brush className="text-4xl text-purple-500" />,
-      title: 'UI/UX Design',
-      description: 'Creating intuitive and beautiful user interfaces with attention to detail.',
-    },
-    {
-      icon: <Speed className="text-4xl text-green-500" />,
-      title: 'Performance',
-      description: 'Optimizing applications for maximum speed and efficiency.',
-    },
-    {
-      icon: <DevicesRounded className="text-4xl text-red-500" />,
-      title: 'Responsive Design',
-      description: 'Ensuring perfect display across all devices and screen sizes.',
-    },
-  ];
+const skills = [
+  {
+    icon: <Code className="text-4xl text-blue-500" />,
+    title: 'Next.js Development',
+    description:
+      'Building scalable and high-performance web applications using Next.js, React, and TypeScript.',
+  },
+  {
+    icon: <DevicesRounded className="text-4xl text-indigo-500" />,
+    title: 'Frontend Engineering',
+    description:
+      'Creating responsive and dynamic user interfaces with modern tools like Tailwind CSS and advanced UI patterns.',
+  },
+  {
+    icon: <Speed className="text-4xl text-green-500" />,
+    title: 'Performance Optimization',
+    description:
+      'Improving application speed, SEO, and user experience through optimization and best practices.',
+  },
+  {
+    icon: <Memory  className="text-4xl text-purple-500" />,
+    title: 'Machine Learning',
+    description:
+      'Developing intelligent, data-driven solutions using Python, data preprocessing, and predictive modeling techniques.',
+  },
+];
 
   return (
     <section
@@ -85,9 +90,8 @@ const About = () => {
           About <span className="text-blue-500">Me</span>
         </h2>
         <p className="about-text text-xl text-gray-600 text-center max-w-3xl mx-auto mb-16">
-          I&apos;m a passionate web developer with a keen eye for design and a commitment to creating
-          seamless user experiences. My journey in web development has equipped me with a
-          diverse skill set and a problem-solving mindset.
+   I'm a passionate Web Developer and Machine Learning Engineer who combines creative design with data-driven intelligence. With a strong foundation in front-end development and a deep interest in AI, I build seamless user experiences powered by smart,
+    scalable solutions. My journey has shaped me into a problem solver who thrives at the intersection of design, development, and machine learning.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

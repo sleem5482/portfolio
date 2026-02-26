@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Image from 'next/image';
@@ -61,8 +62,8 @@ const Home = () => {
               ref={textRef}
               className="text-xl md:text-2xl text-gray-600 max-w-3xl mb-12"
             >
-              A passionate web developer creating beautiful and functional digital experiences.
-              Let&apos;s build something amazing together.
+              A passionate Web Developer and Machine Learning Engineer focused on building intelligent systems and beautiful, high-performance digital experiences.
+                Let&apos;s build something impactful together.
             </p>
             <div
               ref={socialsRef}

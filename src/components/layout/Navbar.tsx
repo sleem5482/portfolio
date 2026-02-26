@@ -1,3 +1,5 @@
+
+"use client"
 import { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { HomeRounded, PersonRounded, WorkRounded, MailRounded, MenuRounded, CloseRounded, Launch } from '@mui/icons-material';

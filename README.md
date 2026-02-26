@@ -66,3 +66,13 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **Made with ❤️ by Sleem Hashem**
+
+
+
+
+$ npx -p node@20 node -v
+Need to install the following packages:
+node@20.20.0
+Ok to proceed? (y) y
+v20.20.0
+
