@@ -2,16 +2,16 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Code, Speed, DevicesRounded,Memory  } from '@mui/icons-material';
+import { Psychology, Code, DevicesRounded, AutoAwesome } from '@mui/icons-material';
 
 const About = () => {
-  const sectionRef =  useRef<HTMLElement | null>(null);;
+  const sectionRef = useRef<HTMLElement | null>(null);;
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     const section = sectionRef.current;
-      if (!section) return; // Ensure section is defined
+      if (!section) return;
     const cards = section.querySelectorAll('.skill-card');
 
     gsap.from(section.querySelector('.about-title'), {
@@ -52,30 +52,30 @@ const About = () => {
     });
   }, []);
 
-const skills = [
+const highlights = [
   {
-    icon: <Code className="text-4xl text-blue-500" />,
-    title: 'Next.js Development',
+    icon: <Psychology className="text-4xl text-violet-500" />,
+    title: 'Machine Learning & AI',
     description:
-      'Building scalable and high-performance web applications using Next.js, React, and TypeScript.',
+      'Building intelligent, data-driven applications with Python, PyTorch, TensorFlow, XGBoost, and Scikit-Learn. Specializing in predictive modeling, deep learning, and Generative AI.',
   },
   {
-    icon: <DevicesRounded className="text-4xl text-indigo-500" />,
+    icon: <AutoAwesome className="text-4xl text-blue-500" />,
+    title: 'Generative AI & RAG',
+    description:
+      'Hands-on experience with LLM engineering and Retrieval-Augmented Generation (RAG) to create context-aware, intelligent semantic search applications.',
+  },
+  {
+    icon: <Code className="text-4xl text-emerald-500" />,
+    title: 'Full-Stack Development',
+    description:
+      'End-to-end development with Next.js, React.js, FastAPI, and PostgreSQL — delivering complete AI-powered web applications from backend to frontend.',
+  },
+  {
+    icon: <DevicesRounded className="text-4xl text-orange-500" />,
     title: 'Frontend Engineering',
     description:
-      'Creating responsive and dynamic user interfaces with modern tools like Tailwind CSS and advanced UI patterns.',
-  },
-  {
-    icon: <Speed className="text-4xl text-green-500" />,
-    title: 'Performance Optimization',
-    description:
-      'Improving application speed, SEO, and user experience through optimization and best practices.',
-  },
-  {
-    icon: <Memory  className="text-4xl text-purple-500" />,
-    title: 'Machine Learning',
-    description:
-      'Developing intelligent, data-driven solutions using Python, data preprocessing, and predictive modeling techniques.',
+      'Creating responsive, high-performance UIs with TypeScript, Tailwind CSS, and modern React patterns. Focused on UX quality and fast load times.',
   },
 ];
 
@@ -87,22 +87,21 @@ const skills = [
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="about-title text-4xl md:text-5xl font-bold text-center mb-8">
-          About <span className="text-blue-500">Me</span>
+          About <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">Me</span>
         </h2>
-        <p className="about-text text-xl text-gray-600 text-center max-w-3xl mx-auto mb-16">
-   I&apos;m a passionate Web Developer and Machine Learning Engineer who combines creative design with data-driven intelligence. With a strong foundation in front-end development and a deep interest in AI, I build seamless user experiences powered by smart,
-    scalable solutions. My journey has shaped me into a problem solver who thrives at the intersection of design, development, and machine learning.
+        <p className="about-text text-xl text-gray-600 text-center max-w-4xl mx-auto mb-16 leading-relaxed">
+          A highly motivated <strong>Machine Learning Engineer</strong> and AI enthusiast with a strong foundation in developing intelligent, data-driven applications. My primary focus lies in <strong>Machine Learning, Deep Learning, and Generative AI</strong>, with hands-on experience in Python, data preprocessing, model development, and deploying scalable AI solutions. Passionate about solving real-world problems by integrating intelligent models into modern workflows. Additionally equipped with robust Full-Stack capabilities using <strong>JavaScript, React, Next.js, and FastAPI</strong>, enabling the end-to-end development of complete AI-powered web applications.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skills.map((skill, index) => (
+          {highlights.map((item, index) => (
             <div
               key={index}
-              className="skill-card bg-white rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-transform duration-300"
+              className="skill-card bg-white rounded-xl shadow-lg p-6 border border-gray-100 transform hover:-translate-y-2 transition-all duration-300 hover:shadow-xl"
             >
-              <div className="mb-4">{skill.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{skill.title}</h3>
-              <p className="text-gray-600">{skill.description}</p>
+              <div className="mb-4">{item.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>
@@ -111,4 +110,4 @@ const skills = [
   );
 };
 
-export default About; 
+export default About;

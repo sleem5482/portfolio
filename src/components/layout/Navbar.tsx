@@ -25,6 +25,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', icon: <HomeRounded />, to: 'home' },
     { name: 'About', icon: <PersonRounded />, to: 'about' },
+    { name: 'Experience', icon: <WorkRounded />, to: 'experience' },
     { name: 'Projects', icon: <WorkRounded />, to: 'projects' },
     { name: 'Contact', icon: <MailRounded />, to: 'contact' },
   ];

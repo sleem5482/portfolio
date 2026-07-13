@@ -44,6 +44,22 @@ const Projects = () => {
   }, []);
 
   const projects = [
+     {
+      title: 'anomaly detection',
+      description: 'resposive web app that predict the heart anomaly for the users using next.js, fastapi and postgresql ',
+      image: "/img/anomaly.png",
+      tags: ['next.js', 'fastapi', 'postgresql','tensorflow','scikit-learn','python','azure'],
+      github: 'https://github.com/sleem5482/depi_front.git',
+      live: 'https://anomaly-lrydabku2-sleems-projects.vercel.app',
+    },
+     {
+      title: 'fraud detection',
+      description: 'the responsive app to detect fraud using fastapi, angular, scikit-learn, and tensorflow',
+      image: "/img/fraud.png",
+      tags: ['angualr','python','fastap','tensorflow','scikit-learn',],
+      github: 'https://github.com/sleem5482/fraud_frontend.git',
+      live: 'https://fraud-frontend-henna.vercel.app/',
+    },
     {
       title: 'Faculty website',
       description: 'the responsive faculty website using React, CSS, js and web3form API ',

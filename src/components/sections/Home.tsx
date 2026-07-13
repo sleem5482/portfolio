@@ -51,19 +51,21 @@ const Home = () => {
           <div className="text-left">
             <h1
               ref={headingRef}
-              className="text-5xl md:text-7xl font-bold text-gray-900 mb-6"
+              className="text-5xl md:text-7xl font-bold text-gray-900 mb-4"
             >
               <span className="block text-4xl md:text-5xl mb-2">Hi, I&apos;m</span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
                 Sleem Hashem
               </span>
             </h1>
+            <p className="text-lg md:text-xl font-semibold text-blue-600 mb-4 tracking-wide uppercase">
+              Machine Learning Engineer &nbsp;|&nbsp; Full-Stack Developer
+            </p>
             <p
               ref={textRef}
               className="text-xl md:text-2xl text-gray-600 max-w-3xl mb-12"
             >
-              A passionate Web Developer and Machine Learning Engineer focused on building intelligent systems and beautiful, high-performance digital experiences.
-                Let&apos;s build something impactful together.
+              Building intelligent, data-driven applications with Generative AI, RAG, FastAPI, and Next.js — end-to-end, from model to production.
             </p>
             <div
               ref={socialsRef}
